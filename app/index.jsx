@@ -14,15 +14,12 @@ export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaView className="bg-primary h-full">
-        <ScrollView
-          contentContainerStyle={{ flexGrow: 1 }}
-          scrollEnabled={true}
-        >
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
           <View className="w-full justify-center items-center h-full px-4">
             <Image
               source={images.logoCoffee}
               resizeMode="contain"
-              className="w-[100px] h-[100px] mb-5"
+              className="w-[250px] h-[170px]"
             />
 
             <Image
@@ -47,18 +44,6 @@ export default function App() {
             <Text className="text-sm font-iRegular text-gray-100 mt-7 text-center">
               Where creativity meets innovation: embark on a journey of
               limitless exploration with Aurora
-            </Text>
-
-            <Text className="text-white text-center mt-7">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-              et totam deserunt voluptatum cumque mollitia! Quas vero possimus
-              expedita eligendi? Quo est repellat, tenetur perferendis ullam,
-              facere quis consectetur culpa sequi dolore asperiores inventore
-              sed maiores odit, molestias animi vitae voluptatibus. Sequi quidem
-              debitis officia hic fugiat nisi, possimus eaque quaerat ea quos
-              natus doloremque maiores saepe consectetur inventore qui iste
-              temporibus! Cum, voluptates enim officiis delectus sit eaque rerum
-              error harum reprehenderit, natus est cumque iste.
             </Text>
 
             <CustomButton

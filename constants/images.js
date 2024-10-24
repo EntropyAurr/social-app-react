@@ -5,7 +5,7 @@ import path from "../assets/images/path.png";
 import logo from "../assets/images/logo.png";
 import logoSmall from "../assets/images/logo-small.png";
 import empty from "../assets/images/empty.png";
-import logoCoffee from "../assets/images/coffee-3.png";
+import logoCoffee from "../assets/images/logoCoffee.png";
 import coffeeArt1 from "../assets/images/coffee-illustration-2.jpg";
 
 export default {
