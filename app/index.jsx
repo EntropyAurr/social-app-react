@@ -9,13 +9,18 @@ import { Redirect, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import images from "../constants/images";
 import CustomButton from "../components/CustomButton";
+import { useGlobalContext } from "../context/GlobalProvider";
 
 export default function App() {
+  const { isLoading, isLogged } = useGlobalContext();
+
+  if (!isLoading && isLogged) return <Redirect href="/home" />;
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaView className="bg-primary h-full">
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
-          <View className="w-full justify-center items-center h-full px-4">
+          <View className="w-full justify-start items-center h-full px-4">
             <Image
               source={images.logoCoffee}
               resizeMode="contain"
